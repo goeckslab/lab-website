@@ -1,5 +1,5 @@
 {% assign image = page.footer | default: site.footer | relative_url %}
-{% assign dark = page.footer-dark | is_nil: site.footer-dark | is_nil: true %}
+{% assign dark = page.footer-dark | is_nil: site.footer-dark | is_nil: false %}
 
 <footer
   class="background"
@@ -23,7 +23,7 @@
     {% endfor %}
   </div>
 
-  <div>
+  <!-- <div>
     &copy; {{ site.time | date: "%Y" }}
     {{ site.title }}
     &nbsp; | &nbsp; Built with
@@ -38,5 +38,5 @@
     data-tooltip="Dark mode"
     aria-label="toggle dark mode"
     oninput="onDarkToggleChange(event)"
-  >
+  > -->
 </footer>

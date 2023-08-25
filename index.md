@@ -1,17 +1,11 @@
 ---
 ---
 
-# goeckslab's Website
-
-An engaging 1-3 sentence description of your lab.
-
 {% include section.html %}
-
-## Highlights
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Our lab develops data science methods and software tools to advance cancer research and patient care. Our areas of technical focus are computational infrastructure, cloud computing, and machine learning. Our areas of cancer research include precision oncology and early detection.
 
 {%
   include button.html
@@ -26,7 +20,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/Research.png"
   link="research"
   title="Our Research"
   text=text
@@ -34,7 +28,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We contribute to the national computational infrastructure projects [Galaxy](https://galaxyproject.org/) and [AnVIL](https://anvilproject.org/). These projects enable accessible, reproducible, collaborative, and scalable analysis of biomedical datasets. We also develop machine learning methods for cancer, including single-cell and spatial datasets.
 
 {%
   include button.html
@@ -49,7 +43,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/Galaxy-ML.png"
   link="projects"
   title="Our Projects"
   flip=true
@@ -59,7 +53,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We're a group of graduate students, data scientists, and software engineers with a passion for applied computing and advancing cancer research. We are looking for motivated individuals with a passion for data science and cancer research. If you are interested in joining us, please check out our [open positions](/positions/).
 
 {%
   include button.html
@@ -74,7 +68,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/lab_axe_throwing.jpg"
   link="team"
   title="Our Team"
   text=text

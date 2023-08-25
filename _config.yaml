@@ -1,19 +1,17 @@
 # site properties and page defaults
-title: goeckslab
-subtitle: 
-description: An engaging 1-3 sentence description of your lab.
-header: images/background.jpg
-footer: images/background.jpg
+title: The Goecks Laboratory
+subtitle: Computational Infrastructure and Machine Learning for Cancer Research
+description: We develop computational infrastructure and machine learning methods to advance cancer research.
+# header: images/background.png
+# footer: images/background.jpg
 
 # site social media and other links
 links:
-  email: contact@goeckslab.com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
+  email: jeremy.goecks[at]moffitt[dot]org
+  google-scholar: hWjExXQAAAAJ
   github: goeckslab
-  twitter: goeckslab
-  youtube: goeckslab
-
+  twitter: jgoecks
+  
 ### jekyll settings
 
 # front matter defaults

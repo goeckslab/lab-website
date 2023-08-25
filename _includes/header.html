@@ -1,5 +1,5 @@
 {% assign image = page.header | default: site.header | relative_url %}
-{% assign dark = page.header-dark | is_nil: site.header-dark | is_nil: true %}
+{% assign dark = page.header-dark | is_nil: site.header-dark | is_nil: false %}
 
 {% assign svg = "images/logo.svg" | file_exists %}
 {% assign png = "images/logo.png" | file_exists %}
@@ -16,7 +16,7 @@
     data-big
   {% endif %}
 >
-  <a href="{{ "/" | relative_url }}" class="home">
+  <a href="https://moffitt.org/" class="home">
     {% if logo %}
       <span class="logo">
         {% if svg %}
@@ -26,6 +26,8 @@
         {% endif %}
       </span>
     {% endif %}
+  </a>
+  <a href="{{ "/" | relative_url }}" class="home">
     {% if site.logo-text != false %}
       <span class="title" data-tooltip="Home">
         {% if site.title and site.show-title != false %}
