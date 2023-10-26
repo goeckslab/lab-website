@@ -7,14 +7,13 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Our research is focused on two broad and complementary areas of research. First, we develop computational infrastructure and machine learning approaches for large-scale biomedical data science. Second, we use data science methods to advance precision cancer treatment by analyzing molecular datasets to predict tumor response to therapy and mechanisms of resistance.
 
 {% include section.html %}
 
 ## Highlighted
 
-{% include citation.html lookup="Open collaborative writing with Manubot" style="rich" %}
+{% include citation.html lookup="Galaxy-ML: An accessible, reproducible, and scalable machine learning toolkit for biomedicine" style="rich" %}
 
 {% include section.html %}
 

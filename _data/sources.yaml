@@ -1,23 +1,86 @@
-- id: doi:10.1371/journal.pcbi.1007128
-  type: paper
-  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  date: 2020-12-4
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
-  buttons:
-    - type: manubot
-      link: https://greenelab.github.io/meta-review/
-    - type: source
-      text: Manuscript Source
-      link: https://github.com/greenelab/meta-review
-    - type: website
-      link: http://manubot.org/
-  tags:
-    - open science
-    - collaboration
-  repo: greenelab/meta-review
+# Examples:
+# - id: doi:10.1371/journal.pcbi.1007128
+#   type: paper
+#   description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+#   date: 2020-12-4
+#   image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
+#   buttons:
+#     - type: manubot
+#       link: https://greenelab.github.io/meta-review/
+#     - type: source
+#       text: Manuscript Source
+#       link: https://github.com/greenelab/meta-review
+#     - type: website
+#       link: http://manubot.org/
+#   tags:
+#     - open science
+#     - collaboration
+#   repo: greenelab/meta-review
 
-- id: doi:10.1016/j.csbj.2020.05.017
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
+# - id: doi:10.1016/j.csbj.2020.05.017
+#   image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
 
-- id: doi:10.7554/eLife.32822
-  image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
+# - id: doi:10.7554/eLife.32822
+#   image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
+- id: doi:10.1101/2023.09.27.557464
+  tags: 
+    - preprint
+- id: doi:10.1093/nar/gkac247
+  tags: 
+    - galaxy
+- id: doi:10.1371/journal.pcbi.1009014
+  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=large&download=&id=10.1371/journal.pcbi.1009014.g001
+  tags: 
+    - galaxy
+- id: doi:10.1038/s41592-021-01308-y
+- id: doi:10.1038/s41698-022-00253-z
+- id: doi:10.1016/j.xcrm.2022.100525
+- id: doi:10.1016/j.xgen.2021.100085
+- id: doi:10.1038/s41698-021-00232-w
+- id: doi:10.1158/2159-8290.CD-20-0841
+- id: doi:10.1101/gr.259903.119
+- id: doi:10.1093/nar/gkaa434
+  tags: 
+    - galaxy
+- id: doi:10.1371/journal.pcbi.1007863
+- id: doi:10.1016/j.cell.2020.03.053
+- id: doi:10.1038/s41588-020-0603-8
+- id: doi:10.1016/j.cell.2020.03.022
+- id: doi:10.1093/bioinformatics/btz472
+  tags: 
+    - galaxy
+- id: doi:10.1016/bs.mie.2019.05.039
+- id: doi:10.1093/bioinformatics/btz309
+- id: doi:10.1158/2159-8290.CD-19-0161
+- id: doi:10.1007/978-0-85729-439-5_6
+  tags: 
+    - galaxy
+- id: doi:10.1038/nbt.2404
+  tags: 
+    - galaxy
+- id: doi:10.1371/journal.pone.0064125
+- id: doi:10.1073/pnas.1222351110
+- id: doi:10.1186/1471-2164-14-397
+- id: doi:10.1371/journal.pone.0083512
+- id: doi:10.1093/bioinformatics/btu413
+- id: doi:10.1371/journal.pcbi.1003972
+- id: doi:10.1002/cam4.360
+- id: doi:10.1038/tpj.2015.97
+- id: doi:10.5731/pdajpst.2016.006734
+- id: doi:10.1109/TKDE.2018.2871031
+- id: doi:10.1093/molbev/msy084
+- id: doi:10.1016/j.cels.2018.03.014
+- id: doi:10.1093/nar/gky379
+  tags: 
+    - galaxy
+- id: doi:10.1109/cloud.2018.00124
+  tags: 
+    - galaxy
+- id: doi:10.1109/eScience.2012.6404442
+- id: doi:10.1186/gb-2012-13-8-318
+- id: doi:10.1109/BioVis.2011.6094046
+- id: doi:10.1186/gb-2010-11-8-r86
+  tags: 
+    - galaxy
+  image: https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fgb-2010-11-8-r86/MediaObjects/13059_2010_Article_2379_Fig1_HTML.jpg?as=webp
+  
