@@ -33,7 +33,7 @@ We contribute to the national computational infrastructure projects [Galaxy](htt
 {%
   include button.html
   link="projects"
-  text="Browse our projects"
+  text="Learn about our projects"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
