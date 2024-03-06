@@ -53,7 +53,7 @@ We contribute to the national computational infrastructure projects [Galaxy](htt
 
 {% capture text %}
 
-We're a group of graduate students, data scientists, and software engineers with a passion for applied computing and advancing cancer research. We are looking for motivated individuals with a passion for data science and cancer research. If you're interested, [please consider joining us](/join-us/).
+We're a group of graduate students, data scientists, and software engineers with a passion for applied computing and advancing cancer research. We are looking for motivated individuals with a passion for data science and cancer research. If you're interested, [please consider joining us](/join-us).
 
 {%
   include button.html
