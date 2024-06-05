@@ -10,6 +10,10 @@ postdoc:
   icon: fa-solid fa-glasses
   description: Postdoctoral Researcher
 
+scientist:
+  icon: fa-solid fa-chart-line
+  description: Data Scientist
+
 phd:
   icon: fa-solid fa-graduation-cap
   description: PhD Student
@@ -20,7 +24,7 @@ undergrad:
 
 programmer:
   icon: fa-solid fa-code
-  description: Programmer
+  description: Software Engineer
 
 mascot:
   icon: fa-solid fa-dog
