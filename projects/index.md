@@ -1,8 +1,8 @@
 ---
-title: Laboratory Projects
-# nav:
-#   order: 1
-#   tooltip: Join the Lab!
+title: Projects
+nav:
+  order: 2
+  tooltip: Learn about our projects!
 ---
 
 # Computational Precision Oncology
