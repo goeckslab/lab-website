@@ -9,5 +9,9 @@ nav:
 
 {% include section.html %}
 
+## Current Members
 {% include list.html data="members" component="portrait" filters="role: pi" %}
-{% include list.html data="members" component="portrait" filters="role: ^(?!pi$)" %}
+{% include list.html data="members" component="portrait" filters="role: ^(?!pi|alumni$)" %}
+
+## Alumni
+{% include list.html data="members" component="portrait" filters="role: alumni" %}

@@ -1,11 +1,11 @@
 ---
 name: Katie Blise
 image: images/katie-blise.jpg
-role: phd
+role: alumni
 aliases:
   - Katie E. Blise
 links:
   github: kblise
 ---
 
-Katie is a Ph.D. student in the Department of Biomedical Engineering at Oregon Health & Science University.
+Katie graduated with a Ph.D. in Biomedical Engineering from Oregon Health & Science University.

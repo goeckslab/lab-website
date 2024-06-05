@@ -26,6 +26,10 @@ programmer:
   icon: fa-solid fa-code
   description: Software Engineer
 
+alumni:
+  icon:
+  description: Alumni
+
 mascot:
   icon: fa-solid fa-dog
   description: Mascot
