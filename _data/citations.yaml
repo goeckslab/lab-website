@@ -1,8 +1,8 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
 - id: doi:10.1101/2023.09.27.557464
-  title: "\u201CLongitudinal and multimodal auditing of tumor adaptation to CDK4/6\
-    \ inhibitors in HR+ metastatic breast cancers\u201D"
+  title: Longitudinal and multimodal auditing of tumor adaptation to CDK4/6 inhibitors
+    in HR+ metastatic breast cancers
   authors:
   - Allison L. Creason
   - Jay Egger
@@ -1374,9 +1374,8 @@
   - Jeremy Goecks
   - Anton Nekrutenko
   - James Taylor
-  - The Galaxy Team
   publisher: Genome Biology
-  date: '2010-01-01'
+  date: '2010-08-25'
   link: https://doi.org/bfkf6s
   tags:
   - galaxy
