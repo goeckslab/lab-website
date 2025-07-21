@@ -1,5 +1,89 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: 10.1158/0008-5472.CAN-24-2829
+  title: Informatics at the Frontier of Cancer Research
+  authors:
+  - Kathleen Noller
+  - Taxiarchis Botsis
+  - Pablo G. Camara
+  - Lauren Ciotti
+  - Lee AD. Cooper
+  - Jeremy Goecks
+  - Malachi Griffith
+  - Brian J. Haas
+  - Trey Ideker
+  - Rachel Karchin
+  - Despina Kontos
+  - Jiaying Lai
+  - Daniel Marcus
+  - Clifford A. Meyer
+  - Kristen Naegle
+  - Sarthak Pati
+  - Bjoern Peters
+  - Dexter Pratt
+  - Benjamin J. Raphael
+  - Michael Reich
+  - Guergana K. Savova
+  - Carrie Wright
+  - Elana J. Fertig
+  - Spyridon Bakas
+  publisher: Cancer Research
+  date: '2025-07-02'
+  link: https://doi.org/g9ttnn
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1158/2326-6066.CIR-23-0873
+  title: Machine Learning Links T-cell Function and Spatial Localization to Neoadjuvant
+    Immunotherapy and Clinical Outcome in Pancreatic Cancer
+  authors:
+  - Katie E. Blise
+  - Shamilene Sivagnanam
+  - Courtney B. Betts
+  - Konjit Betre
+  - Nell Kirchberger
+  - Benjamin J. Tate
+  - Emma E. Furth
+  - Andressa Dias Costa
+  - Jonathan A. Nowak
+  - Brian M. Wolpin
+  - Robert H. Vonderheide
+  - Jeremy Goecks
+  - Lisa M. Coussens
+  - Katelyn T. Byrne
+  publisher: Cancer Immunology Research
+  date: '2024-02-21'
+  link: https://doi.org/g9ttnr
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1038/s41467-025-59788-x
+  title: Imputing single-cell protein abundance in multiplex tissue imaging
+  authors:
+  - Raphael Kirchgaessner
+  - Cameron Watson
+  - Allison Creason
+  - Kaya Keutler
+  - Jeremy Goecks
+  publisher: Nature Communications
+  date: '2025-05-22'
+  link: https://doi.org/g9ttnp
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.1186/s13059-024-03431-3
+  title: 'SyntheVAEiser: augmenting traditional machine learning methods with VAE-based
+    gene expression sample generation for improved cancer subtype predictions'
+  authors:
+  - Brian Karlberg
+  - Raphael Kirchgaessner
+  - Jordan Lee
+  - Matthew Peterkort
+  - Liam Beckman
+  - Jeremy Goecks
+  - Kyle Ellrott
+  publisher: Genome Biology
+  date: '2024-12-18'
+  link: https://doi.org/g9ttnq
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.1101/2023.09.27.557464
   title: Longitudinal and multimodal auditing of tumor adaptation to CDK4/6 inhibitors
     in HR+ metastatic breast cancers
