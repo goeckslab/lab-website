@@ -13,7 +13,7 @@ Our research is focused on two broad and complementary areas of research. First,
 
 ## Highlighted
 
-{% include citation.html lookup="Galaxy-ML: An accessible, reproducible, and scalable machine learning toolkit for biomedicine" style="rich" %}
+{% include citation.html lookup="Machine Learning Links T-cell Function and Spatial Localization to Neoadjuvant Immunotherapy and Clinical Outcome in Pancreatic Cancer" style="rich" %}
 
 {% include section.html %}
 
