@@ -28,7 +28,11 @@ programmer:
 
 alumniphd:
   icon:
-  description: PhD Graduate
+  description: Ph.D. alumnus
+
+alumniundergrad:
+  icon:
+  description: Former Undergraduate Researcher
 
 mascot:
   icon: fa-solid fa-dog

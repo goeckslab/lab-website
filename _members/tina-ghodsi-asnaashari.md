@@ -1,7 +1,7 @@
 ---
 name: Tina Ghodsi Asnaashari
 image: images/tina-ghodsi-asnaashari.jpg
-role: phd
+role: alumniphd
 ---
 
-Tina is a Ph.D. student in the Department of Biomedical Engineering at Oregon Health & Science University. 
+Tina Ghodsi Asnaashari, Ph.D., graduated with a Ph.D. in Biomedical Engineering from Oregon Health & Science University.

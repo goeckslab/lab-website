@@ -1,9 +1,9 @@
 ---
 name: Raphael Kirchgaessner
 image: images/raphael-kirchgaessner.jpg
-role: phd
+role: alumniphd
 links:
   github: Exitare
 ---
 
-Raphael is a Ph.D. student in the Department of Biomedical Engineering at Oregon Health & Science University. 
+Raphael Kirchgaessner, Ph.D., graduated with a Ph.D. in Biomedical Engineering from Oregon Health & Science University.
