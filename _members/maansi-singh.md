@@ -1,7 +1,7 @@
 ---
 name: Maansi Singh
 image: images/maansi-singh.jpg
-role: undergrad
+role: alumniundergrad
 aliases:
   - Maansi Singh
 
