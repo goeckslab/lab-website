@@ -2,9 +2,22 @@
 <html lang="en" data-dark="false">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <!--
-  put your analytics (e.g. Google Analytics) tracking code here
--->
+  
+<!-- Google Analytics: only load on the public lab domain, never in previews. -->
+<script>
+  if (["goeckslab.org", "www.goeckslab.org"].includes(window.location.hostname)) {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", "G-EVM0SPHR5Q");
+
+    var googleTag = document.createElement("script");
+    googleTag.async = true;
+    googleTag.src = "https://www.googletagmanager.com/gtag/js?id=G-EVM0SPHR5Q";
+    document.head.appendChild(googleTag);
+  }
+</script>
+
 
   <!--
   put your search engine verification (e.g. Google Search Console) tag here
@@ -334,6 +347,8 @@
 <!-- include all css in styles folder -->
 
 
+  <link href="/_styles/refresh.css" rel="stylesheet">
+
 
   <!-- third party scripts -->
 <script src="https://unpkg.com/@popperjs/core@2" defer></script>
@@ -359,6 +374,7 @@
 </head>
 
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     
 
 
@@ -367,12 +383,12 @@
 
 
 
-<header class="background" style="--image: url('')" data-dark="false" data-big>
-  <a href="https://moffitt.org/" class="home">
+<header class="background" style="--image: url('')" data-dark="false">
+  <a href="https://moffitt.org/" class="home institution-link" aria-label="Moffitt Cancer Center">
     
       <span class="logo">
         
-          <img src="/images/logo.png" alt="logo">
+          <img src="/images/logo.png" alt="Moffitt Cancer Center">
         
       </span>
     
@@ -390,9 +406,10 @@
     
   </a>
 
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+  <input class="nav-toggle" type="checkbox" aria-label="Show or hide navigation" aria-controls="primary-navigation">
 
-  <nav>
+  <nav id="primary-navigation" aria-label="Main navigation">
+    
     
     
       
@@ -422,7 +439,7 @@
   </nav>
 </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
       <!--
   modify main content of page:
   - add section breaks
@@ -443,81 +460,107 @@
   
 
   <section class="background" data-size="page">
+    <div class="lab-hero">
+  <div class="hero-copy">
+    <p class="eyebrow">The Goecks Laboratory · Moffitt Cancer Center</p>
+    <h1>Biomedical data science. Computational <span>cancer research.</span>
+</h1>
+    <p class="hero-description">We develop computational infrastructure plus AI and machine learning approaches to advance biomedical data science and cancer research.</p>
+    <div class="lab-actions">
+      <a class="lab-button" href="/projects/">Explore our projects <span aria-hidden="true">↗</span></a>
+      <a class="lab-text-link" href="/research/">Browse publications <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <p class="eyebrow">At the intersection</p>
+    <img src="/images/Research.png" width="462" height="327" alt="Lab research overview connecting tissue imaging, artificial intelligence, Galaxy, and AnVIL." fetchpriority="high">
+    <p>Open science and software <span aria-hidden="true">×</span> AI &amp; Machine learning <span aria-hidden="true">×</span> Precision Oncology</p>
+  </div>
+</div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
   size: ;
 -->
 
-<div class="feature">
-  <a href="/research" class="feature-image" aria-label="Our Research">
-    <img src="/images/Research.png" loading="lazy" alt="Our Research" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">Our Research</p>
-    
-    
-<p>Our lab develops data science methods and software tools to advance cancer research and patient care. Our areas of technical focus are computational infrastructure, cloud computing, and machine learning. Our areas of cancer research include precision oncology and early detection.</p>
-
-<div class="button-wrapper">
-    <a class="button" href="/research" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
-      <i class="icon fa-solid fa-arrow-right"></i>
-      
-        <span>See our publications</span>
-      
-    </a>
-  </div>
-
-
-  </div>
+<div class="section-intro">
+  <div>
+<p class="eyebrow">From methods to discovery</p>
+<h2>Featured projects</h2>
 </div>
-
-<div class="feature" data-flip="">
-  <a href="/projects" class="feature-image" aria-label="Our Projects">
-    <img src="/images/Galaxy-ML.png" loading="lazy" alt="Our Projects" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">Our Projects</p>
-    
-    
-<p>We contribute to the national computational infrastructure projects <a href="https://galaxyproject.org/">Galaxy</a> and <a href="https://anvilproject.org/">AnVIL</a>. These projects enable accessible, reproducible, collaborative, and scalable analysis of biomedical datasets. We also develop machine learning methods for cancer, including single-cell and spatial datasets.</p>
-
-<div class="button-wrapper">
-    <a class="button" href="/projects" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
-      <i class="icon fa-solid fa-arrow-right"></i>
-      
-        <span>Learn about our projects</span>
-      
-    </a>
-  </div>
-
-
-  </div>
+  <p>Building software and AI/ML methods to advance precision oncology and biomedical data science</p>
 </div>
+<div class="project-grid">
 
-<div class="feature">
-  <a href="/team" class="feature-image" aria-label="Our Team">
-    <img src="/images/lab_axe_throwing.jpg" loading="lazy" alt="Our Team" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <article class="project-card">
+  <a class="project-card-image" href="/projects/#precision-oncology" tabindex="-1" aria-hidden="true">
+    <img src="/images/Research.png" alt="" loading="lazy" width="640" height="420">
   </a>
-  <div class="feature-text">
-    
-      <p class="feature-title">Our Team</p>
-    
-    
-<p>We’re a group of graduate students, data scientists, and software engineers with a passion for applied computing and advancing cancer research. We are looking for motivated individuals with a passion for data science and cancer research. If you’re interested, <a href="/join-us">please consider joining us</a>.</p>
-
-<div class="button-wrapper">
-    <a class="button" href="/team" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
-      <i class="icon fa-solid fa-arrow-right"></i>
-      
-        <span>Meet our team</span>
-      
-    </a>
+  <div class="project-card-content">
+    <p class="eyebrow">Cancer research</p>
+    <h3><a href="/projects/#precision-oncology">Computational precision oncology</a></h3>
+    <p>Understanding how tumors respond, resist, and adapt to therapy through multimodal data science.</p>
+    <span class="project-card-arrow" aria-hidden="true">↗</span>
   </div>
+</article>
 
 
+  <article class="project-card">
+  <a class="project-card-image" href="/projects/#galaxy" tabindex="-1" aria-hidden="true">
+    <img src="/images/Galaxy-ML.png" alt="" loading="lazy" width="640" height="420">
+  </a>
+  <div class="project-card-content">
+    <p class="eyebrow">Open scientific software</p>
+    <h3><a href="/projects/#galaxy">Galaxy</a></h3>
+    <p>Accessible, reproducible, and scalable analysis for biomedical research.</p>
+    <span class="project-card-arrow" aria-hidden="true">↗</span>
+  </div>
+</article>
+
+
+  <article class="project-card">
+  <a class="project-card-image" href="/projects/#anvil" tabindex="-1" aria-hidden="true">
+    <img src="/images/anvil-infrastructure.svg" alt="" loading="lazy" width="640" height="420">
+  </a>
+  <div class="project-card-content">
+    <p class="eyebrow">Cloud infrastructure</p>
+    <h3><a href="/projects/#anvil">AnVIL</a></h3>
+    <p>Enabling collaborative analysis of large biomedical datasets in the cloud.</p>
+    <span class="project-card-arrow" aria-hidden="true">↗</span>
+  </div>
+</article>
+
+
+</div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<div class="team-callout">
+  <img src="/images/lab_axe_throwing.jpg" alt="Members of the Goecks lab together at an axe-throwing outing." loading="lazy" width="1960" height="4032">
+  <div>
+    <p class="eyebrow">Laboratory team</p>
+    <h2>Teamwork and great science</h2>
+    <p>We’re students, data scientists, software engineers, and faculty with a passion for applied computing and advancing cancer research.</p>
+    <div class="lab-actions">
+<a class="lab-button" href="/team/">Meet our team <span aria-hidden="true">→</span></a><a class="lab-text-link" href="/join-us.html">Join the lab <span aria-hidden="true">↗</span></a>
+</div>
   </div>
 </div>
   </section>
@@ -528,11 +571,9 @@
 
 
 <footer class="background" style="--image: url('')" data-dark="false" data-size="wide">
-  <!--
-    <div>
-      Extra details like contact info or address
-    </div>
-  -->
+  <div class="footer-identity">
+<strong>The Goecks Laboratory</strong><span>Computational infrastructure and machine learning for cancer research.</span>
+</div>
 
   <div>
     

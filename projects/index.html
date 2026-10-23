@@ -2,9 +2,22 @@
 <html lang="en" data-dark="false">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <!--
-  put your analytics (e.g. Google Analytics) tracking code here
--->
+  
+<!-- Google Analytics: only load on the public lab domain, never in previews. -->
+<script>
+  if (["goeckslab.org", "www.goeckslab.org"].includes(window.location.hostname)) {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", "G-EVM0SPHR5Q");
+
+    var googleTag = document.createElement("script");
+    googleTag.async = true;
+    googleTag.src = "https://www.googletagmanager.com/gtag/js?id=G-EVM0SPHR5Q";
+    document.head.appendChild(googleTag);
+  }
+</script>
+
 
   <!--
   put your search engine verification (e.g. Google Search Console) tag here
@@ -334,6 +347,8 @@
 <!-- include all css in styles folder -->
 
 
+  <link href="/_styles/refresh.css" rel="stylesheet">
+
 
   <!-- third party scripts -->
 <script src="https://unpkg.com/@popperjs/core@2" defer></script>
@@ -359,6 +374,7 @@
 </head>
 
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     
 
 
@@ -368,11 +384,11 @@
 
 
 <header class="background" style="--image: url('')" data-dark="false">
-  <a href="https://moffitt.org/" class="home">
+  <a href="https://moffitt.org/" class="home institution-link" aria-label="Moffitt Cancer Center">
     
       <span class="logo">
         
-          <img src="/images/logo.png" alt="logo">
+          <img src="/images/logo.png" alt="Moffitt Cancer Center">
         
       </span>
     
@@ -390,9 +406,10 @@
     
   </a>
 
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+  <input class="nav-toggle" type="checkbox" aria-label="Show or hide navigation" aria-controls="primary-navigation">
 
-  <nav>
+  <nav id="primary-navigation" aria-label="Main navigation">
+    
     
     
       
@@ -402,7 +419,7 @@
       
     
       
-        <a href="/projects/" data-tooltip="Learn about our projects!">
+        <a href="/projects/" data-tooltip="Learn about our projects!" aria-current="page">
           Projects
         </a>
       
@@ -422,7 +439,7 @@
   </nav>
 </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
       <!--
   modify main content of page:
   - add section breaks
@@ -443,13 +460,118 @@
   
 
   <section class="background" data-size="page">
-    <h1 id="computational-precision-oncology">Computational Precision Oncology</h1>
+    <div class="projects-intro">
+  <p class="eyebrow">Our work</p>
+  <h1>Better tools.<br>Deeper understanding.</h1>
+  <p>We connect computational precision oncology, open scientific software, and cloud infrastructure to advance biomedical research.</p>
+  <div class="project-jump-links" aria-label="Project shortcuts">
+    <a href="#precision-oncology">Computational precision oncology <span aria-hidden="true">↓</span></a><a href="#galaxy">Galaxy <span aria-hidden="true">↓</span></a><a href="#anvil">AnVIL <span aria-hidden="true">↓</span></a>
+  </div>
+</div>
+  </section>
 
-<p>We develop and apply computational approaches for analyzing and visualizing clinical, imaging, and omics data for (1) treating cancer using combination therapies adapted over time; and (2) discovering and understanding mechanisms of resistance and priming in cancer. This work integrates public cancer datasets with deep, longitudinal profiling of patient tumors to identify biomarkers that can aid in therapy selection and understand how cancers adapt to therapy. Current areas of focus include building multimodal single-cell tumor atlases, identifying spatial biomarkers in tumor ecosystems, and large-scale machine learning to understand mechanisms of therapeutic response and resistance in tumors.</p>
+  
+  
+  
 
-<h1 id="software-tools-for-machine-learning-in-cancer">Software Tools for Machine Learning in Cancer</h1>
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
 
-<p>We develop computational tools and infrastructure that can efficiently process large biomedical datasets and help investigators make sense of analysis results. We help lead the development of <a href="https://galaxyproject.org/">Galaxy</a>, a Web-based scientific analysis platform that is used by thousands of scientists throughout the world to analyze large biomedical datasets, including genomic, proteomic, metabolomic, and imaging data. We are working to enhance Galaxy through visual analytics, machine learning, and cloud computing. We are also enhancing large-scale data commons through our work to develop the <a href="https://anvilproject.org/">NHGRI Genomic Data Science Analysis, Visualization, and Informatics Lab-Space (AnVIL)</a>.</p>
+<article class="project-detail" id="precision-oncology">
+  <div class="project-detail-copy">
+    <p class="eyebrow">Cancer research</p>
+    <h2>Computational precision oncology</h2>
+    <p class="project-summary">Understanding how tumors respond, resist, and adapt to therapy through multimodal data science.</p>
+    <p>We develop computational approaches to analyze clinical, imaging, and omics data. By integrating public cancer datasets with deep, longitudinal profiling of patient tumors, we work to identify biomarkers that can inform therapy selection and reveal how cancers adapt to treatment.</p>
+    <p>Our work includes multimodal single-cell tumor atlases, spatial biomarkers in tumor ecosystems, and machine learning to understand therapeutic response and resistance.</p>
+    <div class="project-resources">
+      <a class="lab-text-link" href="https://doi.org/10.1158/2326-6066.CIR-23-0873">Spatial immunotherapy study <span aria-hidden="true">↗</span></a><a class="lab-text-link" href="https://doi.org/10.1038/s41467-025-59788-x">Single-cell protein imaging study <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <figure class="project-figure">
+    <a href="/images/Research.png" aria-label="View full image: Computational precision oncology"><img src="/images/Research.png" alt="Overview of the lab’s research, connecting tissue imaging, artificial intelligence, Galaxy, and AnVIL." loading="lazy"></a>
+    <figcaption>Connecting cancer biology with computational methods and infrastructure. <a href="/images/Research.png">View full image</a></figcaption>
+  </figure>
+</article>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<article class="project-detail" id="galaxy">
+  <div class="project-detail-copy">
+    <p class="eyebrow">Open scientific software</p>
+    <h2>Galaxy</h2>
+    <p class="project-summary">Accessible, reproducible, and scalable analysis for biomedical research.</p>
+    <p>We help lead the development of Galaxy, a web-based scientific analysis platform for genomic, proteomic, metabolomic, and imaging data. Our contributions bring visual analytics, machine learning, and cloud computing to biomedical data analysis.</p>
+    <p>Galaxy-ML supports machine learning workflows, from data preparation and model training to evaluation and visualization.</p>
+    <div class="project-resources">
+      <a class="lab-text-link" href="https://galaxyproject.org/">Explore Galaxy <span aria-hidden="true">↗</span></a><a class="lab-text-link" href="https://doi.org/10.1371/journal.pcbi.1009014">Read the Galaxy-ML paper <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <figure class="project-figure">
+    <a href="/images/Galaxy-ML.png" aria-label="View full image: Galaxy"><img src="/images/Galaxy-ML.png" alt="Galaxy-ML workflow diagram showing input data, learner pipelines, training and evaluation, and performance visualization." loading="lazy"></a>
+    <figcaption>Galaxy-ML connects data preparation, model training, and performance visualization. <a href="/images/Galaxy-ML.png">View full image</a></figcaption>
+  </figure>
+</article>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<article class="project-detail" id="anvil">
+  <div class="project-detail-copy">
+    <p class="eyebrow">Cloud infrastructure</p>
+    <h2>AnVIL</h2>
+    <p class="project-summary">Enabling collaborative analysis of large biomedical datasets in the cloud.</p>
+    <p>We contribute to the NHGRI Genomic Data Science Analysis, Visualization, and Informatics Lab-Space (AnVIL). Our work helps enhance large-scale data commons and computational infrastructure for biomedical research.</p>
+    <p>Together with our work on Galaxy, this effort supports accessible, reproducible, collaborative, and scalable analysis of biomedical datasets.</p>
+    <div class="project-resources">
+      <a class="lab-text-link" href="https://anvilproject.org/">Explore AnVIL <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <figure class="project-figure">
+    <a href="/images/anvil-infrastructure.svg" aria-label="View full image: AnVIL"><img src="/images/anvil-infrastructure.svg" alt="Conceptual illustration of shared biomedical data connected to cloud analysis and collaborating researchers; not a scientific result." loading="lazy"></a>
+    <figcaption>Conceptual illustration of shared data, cloud analysis, and collaboration. <a href="/images/anvil-infrastructure.svg">View full image</a></figcaption>
+  </figure>
+</article>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<div class="project-closing">
+<h2>Explore the science behind our work</h2>
+<a class="lab-button" href="/research/">Browse all publications <span aria-hidden="true">→</span></a>
+</div>
   </section>
 
 
@@ -458,11 +580,9 @@
 
 
 <footer class="background" style="--image: url('')" data-dark="false" data-size="wide">
-  <!--
-    <div>
-      Extra details like contact info or address
-    </div>
-  -->
+  <div class="footer-identity">
+<strong>The Goecks Laboratory</strong><span>Computational infrastructure and machine learning for cancer research.</span>
+</div>
 
   <div>
     

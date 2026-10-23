@@ -2,9 +2,22 @@
 <html lang="en" data-dark="false">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <!--
-  put your analytics (e.g. Google Analytics) tracking code here
--->
+  
+<!-- Google Analytics: only load on the public lab domain, never in previews. -->
+<script>
+  if (["goeckslab.org", "www.goeckslab.org"].includes(window.location.hostname)) {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", "G-EVM0SPHR5Q");
+
+    var googleTag = document.createElement("script");
+    googleTag.async = true;
+    googleTag.src = "https://www.googletagmanager.com/gtag/js?id=G-EVM0SPHR5Q";
+    document.head.appendChild(googleTag);
+  }
+</script>
+
 
   <!--
   put your search engine verification (e.g. Google Search Console) tag here
@@ -62,10 +75,10 @@
 
   <meta name="author" content="jane-smith">
   <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2026-08-18T23:54:50+00:00">
+  <meta property="og:updated_time" content="2026-10-23T18:31:45+00:00">
   <meta property="article:published_time" content="2021-09-30T00:00:00+00:00">
-  <meta property="article:modified_time" content="2026-08-18T23:54:50+00:00">
-  <meta name="revised" content="2026-08-18T23:54:50+00:00">
+  <meta property="article:modified_time" content="2026-10-23T18:31:45+00:00">
+  <meta name="revised" content="2026-10-23T18:31:45+00:00">
 
 
 <script type="application/ld+json">
@@ -75,7 +88,7 @@
       "@type": "BlogPosting",
       "author": { "@type": "Person", "name": "Example post 2" },
       "datePublished": "2021-09-30T00:00:00+00:00",
-      "dateModified": "2026-08-18T23:54:50+00:00",
+      "dateModified": "2026-10-23T18:31:45+00:00",
     
     "name": "Example post 2",
     "description": "Computational Infrastructure and Machine Learning for Cancer Research. We develop computational infrastructure and machine learning methods to advance cancer research.",
@@ -290,6 +303,8 @@
 <!-- include all css in styles folder -->
 
 
+  <link href="/_styles/refresh.css" rel="stylesheet">
+
 
   <!-- third party scripts -->
 <script src="https://unpkg.com/@popperjs/core@2" defer></script>
@@ -315,6 +330,7 @@
 </head>
 
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     
 
 
@@ -324,11 +340,11 @@
 
 
 <header class="background" style="--image: url('')" data-dark="false">
-  <a href="https://moffitt.org/" class="home">
+  <a href="https://moffitt.org/" class="home institution-link" aria-label="Moffitt Cancer Center">
     
       <span class="logo">
         
-          <img src="/images/logo.png" alt="logo">
+          <img src="/images/logo.png" alt="Moffitt Cancer Center">
         
       </span>
     
@@ -346,9 +362,10 @@
     
   </a>
 
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+  <input class="nav-toggle" type="checkbox" aria-label="Show or hide navigation" aria-controls="primary-navigation">
 
-  <nav>
+  <nav id="primary-navigation" aria-label="Main navigation">
+    
     
     
       
@@ -378,7 +395,7 @@
   </nav>
 </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
       <!--
   modify main content of page:
   - add section breaks
@@ -425,7 +442,7 @@
   
     <span data-tooltip="Last updated on">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>August 18, 2026</span>
+      <span>October 23, 2026</span>
     </span>
   
 </div>
@@ -484,11 +501,9 @@
 
 
 <footer class="background" style="--image: url('')" data-dark="false" data-size="wide">
-  <!--
-    <div>
-      Extra details like contact info or address
-    </div>
-  -->
+  <div class="footer-identity">
+<strong>The Goecks Laboratory</strong><span>Computational infrastructure and machine learning for cancer research.</span>
+</div>
 
   <div>
     
