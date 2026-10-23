@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<h1>{{ page.name | default: page.title }}</h1>
+
 {% capture floatcontent %}
 
 {% include portrait.html lookup=page.slug %}

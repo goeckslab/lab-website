@@ -3,11 +3,11 @@
 
 // colors
 [data-dark="false"] {
-  --primary: #0ea5e9;
-  --secondary: #7dd3fc;
-  --text: #000000;
+  --primary: #176799;
+  --secondary: #d9eafa;
+  --text: #142d46;
   --background: #ffffff;
-  --background-alt: #fafafa;
+  --background-alt: #f1f6fa;
   --light-gray: #e0e0e0;
   --gray: #808080;
   --overlay: #00000020;
@@ -43,9 +43,9 @@
   --bold: 600;
 
   // text line spacing
-  --spacing: 2;
+  --spacing: 1.7;
 
   // effects
-  --rounded: 3px;
+  --rounded: 12px;
   --shadow: 0 0 10px 0 var(--overlay);
 }

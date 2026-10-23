@@ -12,17 +12,14 @@
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
   {% endif %}
-  {% if page.url == "/" %}
-    data-big
-  {% endif %}
 >
-  <a href="https://moffitt.org/" class="home">
+  <a href="https://moffitt.org/" class="home institution-link" aria-label="Moffitt Cancer Center">
     {% if logo %}
       <span class="logo">
         {% if svg %}
           {{ svg | file_read }}
         {% else %}
-          <img src="{{ logo | relative_url }}" alt="logo">
+          <img src="{{ logo | relative_url }}" alt="Moffitt Cancer Center">
         {% endif %}
       </span>
     {% endif %}
@@ -40,9 +37,10 @@
     {% endif %}
   </a>
 
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+  <input class="nav-toggle" type="checkbox" aria-label="Show or hide navigation" aria-controls="primary-navigation">
 
-  <nav>
+  <nav id="primary-navigation" aria-label="Main navigation">
+    {% assign current_page_url = page.url %}
     {% assign pages = site.pages
       | where_exp: "page", "page.nav"
       | sort: "nav.order"
@@ -52,6 +50,7 @@
         <a
           href="{{ page.dir | relative_url }}"
           data-tooltip="{{ page.nav.tooltip }}"
+          {% if current_page_url == page.url %}aria-current="page"{% endif %}
         >
           {{ page.title }}
         </a>

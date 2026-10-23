@@ -1,47 +1,43 @@
-- title: Cool Dataset
-  subtitle: a subtitle
-  group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
-
-- title: Cool Package
-  subtitle: a subtitle
-  group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
-
-- title: Cool Tutorial
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - resource
-    - publication
-
-- title: Cool Web App
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - software
-
-- title: Cool Web Server
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - software
+- id: precision-oncology
+  title: Computational precision oncology
+  category: Cancer research
+  summary: Understanding how tumors respond, resist, and adapt to therapy through multimodal data science.
+  description: We develop computational approaches to analyze clinical, imaging, and omics data. By integrating public cancer datasets with deep, longitudinal profiling of patient tumors, we work to identify biomarkers that can inform therapy selection and reveal how cancers adapt to treatment.
+  focus: Our work includes multimodal single-cell tumor atlases, spatial biomarkers in tumor ecosystems, and machine learning to understand therapeutic response and resistance.
+  image: images/Research.png
+  image_description: Overview of the lab’s research, connecting tissue imaging, artificial intelligence, Galaxy, and AnVIL.
+  caption: Connecting cancer biology with computational methods and infrastructure.
+  link: /projects/#precision-oncology
+  links:
+    - label: Spatial immunotherapy study
+      url: https://doi.org/10.1158/2326-6066.CIR-23-0873
+    - label: Single-cell protein imaging study
+      url: https://doi.org/10.1038/s41467-025-59788-x
+- id: galaxy
+  title: Galaxy
+  category: Open scientific software
+  summary: Accessible, reproducible, and scalable analysis for biomedical research.
+  description: We help lead the development of Galaxy, a web-based scientific analysis platform for genomic, proteomic, metabolomic, and imaging data. Our contributions bring visual analytics, machine learning, and cloud computing to biomedical data analysis.
+  focus: Galaxy-ML supports machine learning workflows, from data preparation and model training to evaluation and visualization.
+  image: images/Galaxy-ML.png
+  image_description: Galaxy-ML workflow diagram showing input data, learner pipelines, training and evaluation, and performance visualization.
+  caption: Galaxy-ML connects data preparation, model training, and performance visualization.
+  link: /projects/#galaxy
+  links:
+    - label: Explore Galaxy
+      url: https://galaxyproject.org/
+    - label: Read the Galaxy-ML paper
+      url: https://doi.org/10.1371/journal.pcbi.1009014
+- id: anvil
+  title: AnVIL
+  category: Cloud infrastructure
+  summary: Enabling collaborative analysis of large biomedical datasets in the cloud.
+  description: We contribute to the NHGRI Genomic Data Science Analysis, Visualization, and Informatics Lab-Space (AnVIL). Our work helps enhance large-scale data commons and computational infrastructure for biomedical research.
+  focus: Together with our work on Galaxy, this effort supports accessible, reproducible, collaborative, and scalable analysis of biomedical datasets.
+  image: images/anvil-infrastructure.svg
+  image_description: Conceptual illustration of shared biomedical data connected to cloud analysis and collaborating researchers; not a scientific result.
+  caption: Conceptual illustration of shared data, cloud analysis, and collaboration.
+  link: /projects/#anvil
+  links:
+    - label: Explore AnVIL
+      url: https://anvilproject.org/

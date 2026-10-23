@@ -1,0 +1,11 @@
+<article class="project-card">
+  <a class="project-card-image" href="{{ include.project.link | relative_url }}" tabindex="-1" aria-hidden="true">
+    <img src="{{ include.project.image | relative_url }}" alt="" loading="lazy" width="640" height="420">
+  </a>
+  <div class="project-card-content">
+    <p class="eyebrow">{{ include.project.category }}</p>
+    <h3><a href="{{ include.project.link | relative_url }}">{{ include.project.title }}</a></h3>
+    <p>{{ include.project.summary }}</p>
+    <span class="project-card-arrow" aria-hidden="true">↗</span>
+  </div>
+</article>
